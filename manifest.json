@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Tesis Kevin",
+    "version": "0.1.0",
+    "description": "Mencoba Menggambil Gambar dari link yang dibuka",
+    "icons": {
+        "16": "images/16.png"
+     },
+     "content_scripts": [ {
+        "all_frames": true,
+        "js": [ "tf.min.js","js/jquery-1.10.2.js", "js/popup.js"],
+        "matches": [ "http://*/*", "https://*/*" ]
+     } ],
+     "web_accessible_resources": [ "js/jquery.js", "img/*" ]
+}
